@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+<script>
+$(document).ready(function() {
+    $(".btn").click(function() {
+
+        $("#id1").fadeIn();
+        $(".id2").fadeIn('slow').delay(1000);
+        
+            })
+$(".btn").click(function() {
+    $("#id1").css("color", "white");
+    $("#id1").css("background-color", "darkblue");
+    $("#id1").css("font-size", "30px");
+    $("#id1").css("border", "5px solid white");
+    $("#id1").css("border-radius", "10%");
+    $("#id1").css("padding-left", "5px");
+    $("#id1").css("padding-right", "5px");
+    
+})  
+$(".btn").click(function(){
+    $("#id1").animate({
+      left: '250px',
+      opacity: '0.8',
+      height: '88px',
+      width: '200px',
+      borderRadius: '100%'
+    });
+  });      
+        })
+        
+</script>
+</head>
+<body>
+    <div class="container">
+        
+        
+        <h1 id="id1" class="id2"><button type="button" class="btn" onclick="myFunction()">click here</button></h1>
+    </div>
+ <script src="index.js">
+     
+ </script>   
+</body>
+</html>
